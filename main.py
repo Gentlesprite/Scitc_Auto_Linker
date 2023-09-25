@@ -47,7 +47,7 @@ class MainWindow(QMainWindow):
         self.ui.pushButton_schedule_link_cancel.setEnabled(False)  # 打开取消自动登录按钮
         self.ui.pushButton_logout_pc.setEnabled(False)  # 锁定电脑身份注销按钮
         self.ui.pushButton_logout_phone.setEnabled(False)  # 锁定手机身份注销按钮
-        self.settings = QSettings("请勿使用中文目录,请勿删除、移动、修改任何文件.ini", QSettings.IniFormat)
+        self.settings = QSettings("config.ini", QSettings.IniFormat)
         self.init_login_info()  # 显示上一次输入所保存的账号和密码
         self.ui.lineEdit_acc.setValidator(
             QRegExpValidator(QRegExp("[^\u4e00-\u9fa5\s]{25}")))  # 用正则表达式实现禁止输入中文和空白字符，限制25位
