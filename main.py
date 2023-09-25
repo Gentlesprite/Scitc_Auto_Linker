@@ -24,6 +24,7 @@ from ui import *
 import requests
 from win10toast import ToastNotifier
 
+
 class MainWindow(QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
@@ -323,8 +324,9 @@ class MainWindow(QMainWindow):
                 if network_connection('www.baidu.com'):  # 测试网络连通性
                     self.init_device()
                     self.init_logio_button(device='pc', io='in')
-                    self.tn.show_toast(title='校园网认证成功',msg=f'{find_stu_num(self.ui.lineEdit_acc.text())}' + ', ' + f'{self.hello()}' + u'认证成功！' + '\n认证身份:电脑',
-                                       icon_path='./logo.ico',duration=5)
+                    self.tn.show_toast(title='校园网认证成功',
+                                       msg=f'{find_stu_num(self.ui.lineEdit_acc.text())}' + ', ' + f'{self.hello()}' + u'认证成功！' + '\n认证身份:电脑',
+                                       icon_path='./logo.ico', duration=5)
                     QtWidgets.QMessageBox.information(self, u'认证时间:' + f'{Time.now()}' + u'\t',
                                                       f'{find_stu_num(self.ui.lineEdit_acc.text())}' + ', ' + f'{self.hello()}' + u'认证成功！' + '\n认证身份:电脑',
                                                       QtWidgets.QMessageBox.Ok)
@@ -336,9 +338,8 @@ class MainWindow(QMainWindow):
 
                 self.tn.show_toast(title=F'校园网认证失败',
                                    msg=f'{find_stu_num(self.ui.lineEdit_acc.text())}' + ',' + f'{self.hello()},' + u'当前环境非校园网认证失败！',
-                                   icon_path='./logo.ico', duration=5,threaded=True)
+                                   icon_path='./logo.ico', duration=5, threaded=True)
                 QtWidgets.QMessageBox.information(self, u'错误', u'当前环境非校园网', QtWidgets.QMessageBox.Ok)
-
 
     def advance_check_phone(self):  # 登录检测
         if self.basic_check():
