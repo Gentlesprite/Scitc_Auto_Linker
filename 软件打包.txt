@@ -1,0 +1,4 @@
+[normal]
+pyinstaller -i logo.ico -F -w main.py
+[upx]
+pyinstaller --upx-dir=D:\study\Python\Program\scitc_auto_link\version\1.3\upx -F -w main.py -i logo.ico

@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="img">
+    <file>img/scitc.png</file>
+    <file>img/wx.JPG</file>
+    <file>img/zfb.JPG</file>
+    <file>img/wxzfb.png</file>
+    <file>img/zz.png</file>
+    <file>img/favicon_b.ico</file>
+    <file>img/favicon_d.ico</file>
+    <file>img/favicon_q.ico</file>
+    <file>img/favicon_k.ico</file>
+    <file>img/logo.ico</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,979 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>770</width>
+    <height>519</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>川信网络认证</string>
+  </property>
+  <widget class="QLabel" name="img_scitc_east">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>1</y>
+     <width>371</width>
+     <height>510</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/img/img/scitc.png);
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="img_write_background">
+   <property name="geometry">
+    <rect>
+     <x>339</x>
+     <y>1</y>
+     <width>421</width>
+     <height>510</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="cabout_ui" native="true">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>101</y>
+     <width>351</width>
+     <height>381</height>
+    </rect>
+   </property>
+   <widget class="QLineEdit" name="lineEdit_acc">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>0</y>
+      <width>251</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:1px solid rgb(170, 0, 255);
+border-radius:10px;</string>
+    </property>
+    <property name="maxLength">
+     <number>25</number>
+    </property>
+    <property name="placeholderText">
+     <string>账号:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_pwd">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>70</y>
+      <width>251</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:1px solid rgb(170, 0, 255);
+border-radius:10px;</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhHiddenText|Qt::ImhNoAutoUppercase|Qt::ImhNoPredictiveText|Qt::ImhSensitiveData</set>
+    </property>
+    <property name="maxLength">
+     <number>30</number>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>密码:</string>
+    </property>
+    <property name="cursorMoveStyle">
+     <enum>Qt::LogicalMoveStyle</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_login_pc">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>160</y>
+      <width>250</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color: rgb(170, 0, 255);
+border-radius:10px; 
+color:rgb(0, 0, 0);}
+QPushButton:hover{background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(191, 136, 252, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed{padding-top:7px;
+padding-left:7px;}</string>
+    </property>
+    <property name="text">
+     <string>登  录</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_schedule_link_pc">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>325</y>
+      <width>250</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>15</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color: rgb(100, 80, 255);
+border-radius:10px; 
+color:rgb(0, 0, 0);}
+QPushButton:hover{background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(166, 136, 252, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed{padding-top:7px;
+padding-left:7px;}</string>
+    </property>
+    <property name="text">
+     <string>自动认证(电脑)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_schedule_link_cancel">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>325</y>
+      <width>250</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>15</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color: rgb(150, 110, 255);
+
+border-radius:10px; 
+color:rgb(0, 0, 0);}
+QPushButton:hover{background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(166, 136, 252, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed{padding-top:7px;
+padding-left:7px;}</string>
+    </property>
+    <property name="text">
+     <string>取消自动认证</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_rem">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>130</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>记住账号密码</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_login_phone">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>215</y>
+      <width>250</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>15</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+
+background-color: rgb(135, 0, 255);
+border-radius:10px; 
+color:rgb(0, 0, 0);}
+QPushButton:hover{background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(191, 136, 252, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed{padding-top:7px;
+padding-left:7px;}</string>
+    </property>
+    <property name="text">
+     <string>伪装手机登录</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_show_pwd">
+    <property name="geometry">
+     <rect>
+      <x>65</x>
+      <y>130</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>显示密码</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_schedule_link_phone">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>325</y>
+      <width>250</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>15</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color: rgb(100, 80, 255);
+border-radius:10px; 
+color:rgb(0, 0, 0);}
+QPushButton:hover{background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(166, 136, 252, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed{padding-top:7px;
+padding-left:7px;}</string>
+    </property>
+    <property name="text">
+     <string>自动认证(手机)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_schedule_link_exh">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>325</y>
+      <width>250</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>15</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color: rgb(100, 80, 255);
+border-radius:10px; 
+color:rgb(0, 0, 0);}
+QPushButton:hover{background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(166, 136, 252, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed{padding-top:7px;
+padding-left:7px;}</string>
+    </property>
+    <property name="text">
+     <string>自动认证</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_logout_exh">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>270</y>
+      <width>250</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>15</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+
+background-color: rgb(125, 50, 200);
+border-radius:10px; 
+color:rgb(0, 0, 0);}
+QPushButton:hover{background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(191, 136, 252, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed{padding-top:7px;
+padding-left:7px;}</string>
+    </property>
+    <property name="text">
+     <string>注  销</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_logout_phone">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>270</y>
+      <width>250</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>15</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+
+background-color: rgb(125, 50, 200);
+border-radius:10px; 
+color:rgb(0, 0, 0);}
+QPushButton:hover{background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(191, 136, 252, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed{padding-top:7px;
+padding-left:7px;}</string>
+    </property>
+    <property name="text">
+     <string>注销(手机)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_logout_pc">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>270</y>
+      <width>250</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>15</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+
+background-color: rgb(125, 50, 200);
+border-radius:10px; 
+color:rgb(0, 0, 0);}
+QPushButton:hover{background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(191, 136, 252, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed{padding-top:7px;
+padding-left:7px;}</string>
+    </property>
+    <property name="text">
+     <string>注销(电脑)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_schedule_link_force_cancel">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>325</y>
+      <width>250</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>15</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color: rgb(100, 80, 255);
+border-radius:10px; 
+color:rgb(0, 0, 0);}
+QPushButton:hover{background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(166, 136, 252, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed{padding-top:7px;
+padding-left:7px;}</string>
+    </property>
+    <property name="text">
+     <string>强制取消自动认证</string>
+    </property>
+   </widget>
+   <zorder>lineEdit_pwd</zorder>
+   <zorder>lineEdit_acc</zorder>
+   <zorder>pushButton_login_pc</zorder>
+   <zorder>pushButton_schedule_link_pc</zorder>
+   <zorder>pushButton_schedule_link_cancel</zorder>
+   <zorder>checkBox_rem</zorder>
+   <zorder>pushButton_login_phone</zorder>
+   <zorder>checkBox_show_pwd</zorder>
+   <zorder>pushButton_schedule_link_phone</zorder>
+   <zorder>pushButton_schedule_link_exh</zorder>
+   <zorder>pushButton_logout_exh</zorder>
+   <zorder>pushButton_logout_phone</zorder>
+   <zorder>pushButton_logout_pc</zorder>
+   <zorder>pushButton_schedule_link_force_cancel</zorder>
+  </widget>
+  <widget class="QPushButton" name="pushButton_quit">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>11</y>
+     <width>31</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background-color: rgbA(0, 0, 0, 255);
+border-radius:10px; 
+color:rgb(0, 0, 0);}
+QPushButton:hover{background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed{padding-top:7px;
+padding-left:7px;}</string>
+   </property>
+   <property name="text">
+    <string>X</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_mini">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>11</y>
+     <width>31</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background-color: rgbA(0, 0, 0, 255);
+border-radius:10px; 
+color:rgb(0, 0, 0);}
+QPushButton:hover{background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 222, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed{padding-top:7px;
+padding-left:7px;}</string>
+   </property>
+   <property name="text">
+    <string>-</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="clogin_ui" native="true">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>46</y>
+     <width>215</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QPushButton" name="pushButton_clogin">
+      <property name="font">
+       <font>
+        <family>黑体</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_clogin{
+border:none;
+color:rgb(170, 0, 255);
+}
+#pushButton:focus {
+	color:gray;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>登录</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="Line" name="line">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_cabout">
+      <property name="font">
+       <font>
+        <family>黑体</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_cabout{
+border:none;
+color:rgb(170, 0, 255);
+}
+#pushButton:focus {
+	color:gray;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>关于作者</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="money_ui" native="true">
+   <property name="geometry">
+    <rect>
+     <x>-20</x>
+     <y>-10</y>
+     <width>791</width>
+     <height>522</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="img_scitc_playground">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>761</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+border-image: url(:/img/img/zz.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_back">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>370</y>
+      <width>130</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+
+background-color: rgb(97, 139, 255);
+
+border-radius:10px; 
+color:rgb(0, 0, 0);}
+QPushButton:hover{background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(162, 192, 255, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+    </property>
+    <property name="text">
+     <string>返回主页</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_money">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>370</y>
+      <width>130</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+
+	background-color: rgb(187, 255, 78);
+border-radius:10px; 
+color: rgb(0, 0, 0);}
+QPushButton:hover{background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 177, 207, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+    </property>
+    <property name="text">
+     <string>捐赠作者</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_pay">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>10</y>
+      <width>601</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/img/img/wxzfb.png);
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_quit_pay">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>10</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+
+	background-color: rgb(244, 0, 0);
+border-radius:10px; 
+color: rgb(0, 0, 0);}
+QPushButton:hover{background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 177, 207, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+    </property>
+    <property name="text">
+     <string>关闭</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_qq">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>110</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>30</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushButton_qq{
+	image: url(:/img/img/favicon_q.ico);
+border:none;
+color:rgb(252, 157, 154);
+}
+#pushButton:focus {
+	color:gray;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_bilibili">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>110</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>30</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">	#pushButton_bilibili{
+	image: url(:/img/img/favicon_b.ico);
+border:none;
+color:rgb(200, 200, 169);
+}
+#pushButton:focus {
+	color:gray;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_tips">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>30</y>
+      <width>601</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>23</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushButton_tips{
+border:none;
+	
+	color: rgb(167, 117, 60);
+}
+#pushButton:focus {
+	color:gray;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>关于作者(点击图标即可添加)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_douyin">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>110</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>30</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushButton_douyin{
+	image: url(:/img/img/favicon_d.ico);
+border:none;
+color:rgb(249, 205, 173);
+}
+#pushButton:focus {
+	color:gray;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_kuaishou">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>110</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>30</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushButton_kuaishou{
+	image: url(:/img/img/favicon_k.ico);
+border:none;
+color:rgb(131, 175, 155);
+}
+#pushButton:focus {
+	color:gray;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_author">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>145</y>
+      <width>601</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>23</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushButton_author{
+border:none;
+color:
+             qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #c5ff49, stop: 0.4 #a1ff75,
+                                stop: 0.5 #b0dd5d, stop: 1.0 #fddc21)
+}
+#pushButton:focus {
+	color:gray;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>唯一作者：LZY/我不是盘神
+有任何问题请联系作者
+未经允许，禁止转载、盗卖</string>
+    </property>
+   </widget>
+  </widget>
+  <zorder>img_write_background</zorder>
+  <zorder>img_scitc_east</zorder>
+  <zorder>money_ui</zorder>
+  <zorder>cabout_ui</zorder>
+  <zorder>clogin_ui</zorder>
+  <zorder>pushButton_quit</zorder>
+  <zorder>pushButton_mini</zorder>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
