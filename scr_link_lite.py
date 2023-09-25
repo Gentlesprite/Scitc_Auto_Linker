@@ -132,7 +132,6 @@ def connect_school_network() -> int:
     time.sleep(2)  # 延迟1秒等待wifi连接
     end_time = time.time()
     takes_time = int(end_time - start_time)
-
     # print(f'连接校园网共耗时{takes_time}秒')
     return takes_time
 
