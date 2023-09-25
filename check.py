@@ -191,6 +191,7 @@ def network_connection(host: str):  # 判断是否可以上网
     finally:
         sock.close()
 
+
 # def school_network():
 #     global t
 #     ct = CustomTask()
