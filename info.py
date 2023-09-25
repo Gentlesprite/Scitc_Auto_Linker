@@ -7,6 +7,7 @@ import webbrowser
 from main import *
 import time
 
+
 class Author_info:
     @staticmethod
     def add_qq():
@@ -38,6 +39,8 @@ class Author_info:
     def author_name():
         name = b'Gentlesprites'
         return str(bytes.decode(name))
+
+
 class Time:
     @staticmethod
     def now():
@@ -47,6 +50,3 @@ class Time:
     def hour():
         get_hour = time.strftime('%H')
         return int(get_hour)
-
-
-
