@@ -93,3 +93,4 @@ class MyPing():
             return return_time
         else:
             return -1
+
