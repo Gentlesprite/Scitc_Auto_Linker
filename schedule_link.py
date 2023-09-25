@@ -92,6 +92,7 @@ class WifiConnector:
             print("Non campus network, connect school network failed.")
             return False
 
+
 def main():
     def get_host_ip():
         global s
