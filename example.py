@@ -8,8 +8,10 @@ import socket
 import pywifi
 import threading
 import time
+
 KEYWORD = "ChinaNet"
 MAX_CONNECT_TRY = 3
+
 
 class WifiScanner:
     def __init__(self):
@@ -82,6 +84,7 @@ class WifiConnector:
             print("环境非校园网")
             return False
 
+
 def main():
     def get_host_ip():
         global s
@@ -99,7 +102,8 @@ def main():
     data = 1
 
     requests.post(url=url, data=data, headers=headers)
-    
+
+
 def connect_school_network() -> int:
     start_time = time.time()
     connector = WifiConnector()
@@ -110,7 +114,7 @@ def connect_school_network() -> int:
     print(f'连接校园网共耗时{takes_time}秒')
     return takes_time
 
+
 if __name__ == "__main__":
     connect_school_network()
     main()
-
