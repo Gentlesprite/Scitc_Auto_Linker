@@ -4,6 +4,7 @@
 # 软件示例:
 
 ![image](https://github.com/Gentlesprite/scitc-auto-linker/blob/master/img/20230607115951.png)
+![image](https://github.com/Gentlesprite/scitc-auto-linker/blob/master/img/20230607115950.png)
 
 基于python实现，软件完全免费使用
 
