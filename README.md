@@ -1,6 +1,6 @@
 # 自动登录四川信息职业技术学院校园网软件示例
 
-作者:Gentlesprite
+作者:[Gentlesprite(https://github.com/Gentlesprite)]
 # 软件示例:
 
 ![image](https://github.com/Gentlesprite/scitc-auto-linker/blob/master/img/20230607115951.png)
