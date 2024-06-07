@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="15%" align="center" src="https://github.com/Gentlesprite/windows-powerbar/blob/main/res/powerbarlogo.png" alt="logo">
+  <img width="15%" align="center" src="https://github.com/Gentlesprite/scitc-auto-linker/blob/master/img/logo.ico" alt="logo">
 </p>
   <h1 align="center">
   scitc-auto-linker
