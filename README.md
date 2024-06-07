@@ -11,7 +11,10 @@
 开机自动登录四川信息职业技术学院校园网
 
 # 下载地址:
-蓝奏云:[整合 点击跳转下载](https://wwgr.lanzouw.com/b00rpet2d) [安装包版本 点击跳转下载](https://wwgr.lanzouw.com/b00rpdqcj)[压缩包版本地址 点击跳转下载](https://wwgr.lanzouw.com/b00rpdqda) [软件源代码 点击跳转下载](https://wwgr.lanzouw.com/b00rpdqfc) 密码:scitc
+蓝奏云:[整合 点击跳转下载](https://wwgr.lanzouw.com/b00rpet2d)
+       [安装包版本 点击跳转下载](https://wwgr.lanzouw.com/b00rpdqcj) 
+       [压缩包版本地址 点击跳转下载](https://wwgr.lanzouw.com/b00rpdqda) 
+       [软件源代码 点击跳转下载](https://wwgr.lanzouw.com/b00rpdqfc) 密码:scitc
 
 Github:[点击跳转下载](https://github.com/Gentlesprite/scitc-auto-linker/releases)
 
