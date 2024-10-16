@@ -38,7 +38,7 @@ B站视频:[点击跳转视频1](https://www.bilibili.com/video/BV1Qs4y1m759/?sh
 
 
 # 下载地址:
-蓝奏云 密码:scitc:
+蓝奏云 密码:scitc
 
 [整合 点击跳转下载](https://wwgr.lanzouw.com/b00rpet2d)
 
